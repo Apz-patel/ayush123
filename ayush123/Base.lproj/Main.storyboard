@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="xD0-bf-pYP">
+            <objects>
+                <tableViewController id="vY9-l4-0ka" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Root View Controller" id="hIr-pu-HjY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPE-WD-iN3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="-29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iPJ-PK-vsd">
+            <objects>
+                <navigationController id="6GG-Xk-ZeD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pr2-Yb-PHn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vY9-l4-0ka" kind="relationship" relationship="rootViewController" id="WU0-MR-xA8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grP-0Z-F4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1218" y="-29"/>
+        </scene>
+    </scenes>
+</document>
